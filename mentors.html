@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Connect with expert mentors in Web Development, Data Science, Marketing, and more at SkillShare Academy">
+    <title>Mentors - SkillShare Academy</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>SkillShare Academy</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="courses.html" class="nav-link">Courses</a></li>
+                    <li><a href="mentors.html" class="nav-link active">Mentors</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Learn from Industry Experts</h1>
+                <p>Get personalized guidance from 500+ expert mentors across various fields</p>
+            </div>
+        </section>
+
+        <section class="mentor-filters">
+            <div class="container">
+                <div class="search-bar">
+                    <input type="search" placeholder="Search mentors by name or expertise..." aria-label="Search mentors">
+                    <button type="submit" aria-label="Search">🔍</button>
+                </div>
+                <div class="filter-controls">
+                    <div class="filter-group">
+                        <label for="expertise-filter">Expertise:</label>
+                        <select id="expertise-filter">
+                            <option value="all">All Fields</option>
+                            <option value="web-development">Web Development</option>
+                            <option value="data-science">Data Science</option>
+                            <option value="marketing">Digital Marketing</option>
+                            <option value="design">UI/UX Design</option>
+                            <option value="business">Business</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="experience-filter">Experience:</label>
+                        <select id="experience-filter">
+                            <option value="all">All Levels</option>
+                            <option value="junior">3-5 years</option>
+                            <option value="mid">5-10 years</option>
+                            <option value="senior">10+ years</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="rating-filter">Rating:</label>
+                        <select id="rating-filter">
+                            <option value="all">All Ratings</option>
+                            <option value="5">5 Stars</option>
+                            <option value="4">4+ Stars</option>
+                            <option value="3">3+ Stars</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-mentors">
+            <div class="container">
+                <h2>Featured Mentors</h2>
+                <div class="mentors-grid">
+                    <article class="mentor-card featured">
+                        <div class="mentor-badge">⭐ Top Rated</div>
+                        <img src="assets/images/mentor-sarah.jpg" alt="Sarah Johnson - Full Stack Developer">
+                        <div class="mentor-info">
+                            <h3>Sarah Johnson</h3>
+                            <p class="mentor-title">Senior Full Stack Developer</p>
+                            <p class="mentor-company">Tech Innovation Labs</p>
+                            <div class="mentor-rating">
+                                <span class="rating">★★★★★ 5.0</span>
+                                <span class="reviews">(127 reviews)</span>
+                            </div>
+                            <div class="mentor-expertise">
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">MongoDB</span>
+                            </div>
+                            <p class="mentor-description">10+ years experience building scalable web applications. Specialized in modern JavaScript frameworks and cloud architecture.</p>
+                            <div class="mentor-stats">
+                                <span>👥 89 Students</span>
+                                <span>💼 8 years teaching</span>
+                            </div>
+                            <div class="mentor-pricing">
+                                <span class="price">$75/hour</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">Book Session</a>
+                        </div>
+                    </article>
+
+                    <article class="mentor-card featured">
+                        <div class="mentor-badge">🔥 Popular</div>
+                        <img src="assets/images/mentor-michael.jpg" alt="Dr. Michael Chen - Data Scientist">
+                        <div class="mentor-info">
+                            <h3>Dr. Michael Chen</h3>
+                            <p class="mentor-title">Senior Data Scientist</p>
+                            <p class="mentor-company">DataTech Solutions</p>
+                            <div class="mentor-rating">
+                                <span class="rating">★★★★★ 4.9</span>
+                                <span class="reviews">(203 reviews)</span>
+                            </div>
+                            <div class="mentor-expertise">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Machine Learning</span>
+                                <span class="skill-tag">TensorFlow</span>
+                            </div>
+                            <p class="mentor-description">PhD in Computer Science with 12+ years in AI/ML. Published researcher and industry consultant.</p>
+                            <div class="mentor-stats">
+                                <span>👥 156 Students</span>
+                                <span>💼 6 years teaching</span>
+                            </div>
+                            <div class="mentor-pricing">
+                                <span class="price">$85/hour</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">Book Session</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="mentors-directory">
+            <div class="container">
+                <h2>All Mentors</h2>
+                <div class="mentors-grid">
+                    <article class="mentor-card">
+                        <img src="assets/images/mentor-emma.jpg" alt="Emma Rodriguez - Digital Marketing Expert">
+                        <div class="mentor-info">
+                            <h3>Emma Rodriguez</h3>
+                            <p class="mentor-title">Digital Marketing Director</p>
+                            <p class="mentor-company">Growth Marketing Pro</p>
+                            <div class="mentor-rating">
+                                <span class="rating">★★★★★ 4.8</span>
+                                <span class="reviews">(95 reviews)</span>
+                            </div>
+                            <div class="mentor-expertise">
+                                <span class="skill-tag">SEO</span>
+                                <span class="skill-tag">Google Ads</span>
+                                <span class="skill-tag">Analytics</span>
+                            </div>
+                            <p class="mentor-description">7+ years driving growth for startups and Fortune 500 companies through data-driven marketing strategies.</p>
+                            <div class="mentor-stats">
+                                <span>👥 73 Students</span>
+                                <span>💼 4 years teaching</span>
+                            </div>
+                            <div class="mentor-pricing">
+                                <span class="price">$60/hour</span>
+                            </div>
+                            <a href="#" class="btn btn-outline">View Profile</a>
+                        </div>
+                    </article>
+
+                    <article class="mentor-card">
+                        <img src="assets/images/mentor-alex.jpg" alt="Alex Thompson - UX Designer">
+                        <div class="mentor-info">
+                            <h3>Alex Thompson</h3>
+                            <p class="mentor-title">Senior UX Designer</p>
+                            <p class="mentor-company">Design Studios Inc</p>
+                            <div class="mentor-rating">
+                                <span class="rating">★★★★★ 4.9</span>
+                                <span class="reviews">(142 reviews)</span>
+                            </div>
+                            <div class="mentor-expertise">
+                                <span class="skill-tag">Figma</span>
+                                <span class="skill-tag">User Research</span>
+                                <span class="skill-tag">Prototyping</span>
+                            </div>
+                            <p class="mentor-description">Award-winning designer with 9+ years creating user-centered experiences for mobile and web applications.</p>
+                            <div class="mentor-stats">
+                                <span>👥 98 Students</span>
+                                <span>💼 5 years teaching</span>
+                            </div>
+                            <div class="mentor-pricing">
+                                <span class="price">$70/hour</span>
+                            </div>
+                            <a href="#" class="btn btn-outline">View Profile</a>
+                        </div>
+                    </article>
+
+                    <article class="mentor-card">
+                        <img src="assets/images/mentor-maria.jpg" alt="Maria Garcia - Project Manager">
+                        <div class="mentor-info">
+                            <h3>Maria Garcia</h3>
+                            <p class="mentor-title">Senior Project Manager</p>
+                            <p class="mentor-company">AgileWorks Consulting</p>
+                            <div class="mentor-rating">
+                                <span class="rating">★★★★☆ 4.7</span>
+                                <span class="reviews">(67 reviews)</span>
+                            </div>
+                            <div class="mentor-expertise">
+                                <span class="skill-tag">Scrum</span>
+                                <span class="skill-tag">Kanban</span>
+                                <span class="skill-tag">Leadership</span>
+                            </div>
+                            <p class="mentor-description">Certified PMP with 11+ years managing complex projects and leading cross-functional teams.</p>
+                            <div class="mentor-stats">
+                                <span>👥 54 Students</span>
+                                <span>💼 3 years teaching</span>
+                            </div>
+                            <div class="mentor-pricing">
+                                <span class="price">$65/hour</span>
+                            </div>
+                            <a href="#" class="btn btn-outline">View Profile</a>
+                        </div>
+                    </article>
+
+                    <article class="mentor-card">
+                        <img src="assets/images/mentor-david.jpg" alt="David Kim - Cybersecurity Expert">
+                        <div class="mentor-info">
+                            <h3>David Kim</h3>
+                            <p class="mentor-title">Cybersecurity Consultant</p>
+                            <p class="mentor-company">SecureNet Solutions</p>
+                            <div class="mentor-rating">
+                                <span class="rating">★★★★★ 4.8</span>
+                                <span class="reviews">(88 reviews)</span>
+                            </div>
+                            <div class="mentor-expertise">
+                                <span class="skill-tag">Penetration Testing</span>
+                                <span class="skill-tag">Network Security</span>
+                                <span class="skill-tag">CISSP</span>
+                            </div>
+                            <p class="mentor-description">15+ years protecting organizations from cyber threats. CISSP certified with extensive consulting experience.</p>
+                            <div class="mentor-stats">
+                                <span>👥 76 Students</span>
+                                <span>💼 7 years teaching</span>
+                            </div>
+                            <div class="mentor-pricing">
+                                <span class="price">$80/hour</span>
+                            </div>
+                            <a href="#" class="btn btn-outline">View Profile</a>
+                        </div>
+                    </article>
+
+                    <article class="mentor-card">
+                        <img src="assets/images/mentor-jennifer.jpg" alt="Jennifer Liu - Product Manager">
+                        <div class="mentor-info">
+                            <h3>Jennifer Liu</h3>
+                            <p class="mentor-title">Senior Product Manager</p>
+                            <p class="mentor-company">TechStartup Hub</p>
+                            <div class="mentor-rating">
+                                <span class="rating">★★★★★ 4.9</span>
+                                <span class="reviews">(112 reviews)</span>
+                            </div>
+                            <div class="mentor-expertise">
+                                <span class="skill-tag">Product Strategy</span>
+                                <span class="skill-tag">User Analytics</span>
+                                <span class="skill-tag">A/B Testing</span>
+                            </div>
+                            <p class="mentor-description">8+ years launching successful products at scale. Expert in product-market fit and growth strategies.</p>
+                            <div class="mentor-stats">
+                                <span>👥 91 Students</span>
+                                <span>💼 4 years teaching</span>
+                            </div>
+                            <div class="mentor-pricing">
+                                <span class="price">$75/hour</span>
+                            </div>
+                            <a href="#" class="btn btn-outline">View Profile</a>
+                        </div>
+                    </article>
+
+                    <article class="mentor-card">
+                        <img src="assets/images/mentor-robert.jpg" alt="Robert Singh - DevOps Engineer">
+                        <div class="mentor-info">
+                            <h3>Robert Singh</h3>
+                            <p class="mentor-title">DevOps Architect</p>
+                            <p class="mentor-company">CloudOps Enterprise</p>
+                            <div class="mentor-rating">
+                                <span class="rating">★★★★☆ 4.6</span>
+                                <span class="reviews">(56 reviews)</span>
+                            </div>
+                            <div class="mentor-expertise">
+                                <span class="skill-tag">AWS</span>
+                                <span class="skill-tag">Docker</span>
+                                <span class="skill-tag">Kubernetes</span>
+                            </div>
+                            <p class="mentor-description">12+ years building scalable infrastructure and CI/CD pipelines for enterprise applications.</p>
+                            <div class="mentor-stats">
+                                <span>👥 43 Students</span>
+                                <span>💼 3 years teaching</span>
+                            </div>
+                            <div class="mentor-pricing">
+                                <span class="price">$85/hour</span>
+                            </div>
+                            <a href="#" class="btn btn-outline">View Profile</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="load-more">
+                    <button class="btn btn-outline">Load More Mentors</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="mentor-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Accelerate Your Learning?</h2>
+                    <p>Book a mentorship session and get personalized guidance from industry experts</p>
+                    <div class="cta-buttons">
+                        <a href="#" class="btn btn-primary">Find Your Mentor</a>
+                        <a href="#" class="btn btn-secondary">Learn About Mentorship</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SkillShare Academy</h3>
+                    <p>Empowering professionals through expert-led learning and mentorship.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Learn</h4>
+                    <ul>
+                        <li><a href="courses.html">Browse Courses</a></li>
+                        <li><a href="mentors.html">Find Mentors</a></li>
+                        <li><a href="#">Learning Paths</a></li>
+                        <li><a href="#">Certifications</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Community Forum</a></li>
+                        <li><a href="#">Student Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SkillShare Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

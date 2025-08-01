@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our comprehensive course catalog - Web Development, Data Science, Digital Marketing, and more at SkillShare Academy">
+    <title>Courses - SkillShare Academy</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>SkillShare Academy</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="courses.html" class="nav-link active">Courses</a></li>
+                    <li><a href="mentors.html" class="nav-link">Mentors</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Discover Your Next Skill</h1>
+                <p>Choose from over 200 courses designed by industry experts to advance your career</p>
+            </div>
+        </section>
+
+        <section class="course-filters">
+            <div class="container">
+                <div class="search-bar">
+                    <input type="search" placeholder="Search courses..." aria-label="Search courses">
+                    <button type="submit" aria-label="Search">🔍</button>
+                </div>
+                <div class="filter-tabs">
+                    <button class="filter-btn active" data-category="all">All Courses</button>
+                    <button class="filter-btn" data-category="development">Development</button>
+                    <button class="filter-btn" data-category="data-science">Data Science</button>
+                    <button class="filter-btn" data-category="marketing">Marketing</button>
+                    <button class="filter-btn" data-category="design">Design</button>
+                    <button class="filter-btn" data-category="business">Business</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-section">
+            <div class="container">
+                <h2>Recommended for You</h2>
+                <div class="courses-grid">
+                    <article class="course-card featured">
+                        <div class="course-badge">🔥 Popular</div>
+                        <img src="assets/images/course-react.jpg" alt="React Development Masterclass">
+                        <div class="course-info">
+                            <h3>React Development Masterclass</h3>
+                            <p class="instructor">by Sarah Johnson</p>
+                            <div class="course-meta">
+                                <span class="rating">★★★★★ 4.9 (2,340)</span>
+                                <span class="duration">16 weeks</span>
+                                <span class="level">Intermediate</span>
+                            </div>
+                            <p class="course-description">Master modern React development with hooks, context, and advanced patterns</p>
+                            <p class="price">$399 <span class="original-price">$499</span></p>
+                            <a href="#" class="btn btn-primary">Enroll Now</a>
+                        </div>
+                    </article>
+                    <article class="course-card featured">
+                        <div class="course-badge">⭐ New</div>
+                        <img src="assets/images/course-python-ai.jpg" alt="Python for AI and Machine Learning">
+                        <div class="course-info">
+                            <h3>Python for AI & Machine Learning</h3>
+                            <p class="instructor">by Dr. Michael Chen</p>
+                            <div class="course-meta">
+                                <span class="rating">★★★★★ 4.8 (1,567)</span>
+                                <span class="duration">14 weeks</span>
+                                <span class="level">Advanced</span>
+                            </div>
+                            <p class="course-description">Build AI applications using Python, TensorFlow, and scikit-learn</p>
+                            <p class="price">$449</p>
+                            <a href="#" class="btn btn-primary">Enroll Now</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="courses-catalog">
+            <div class="container">
+                <h2>All Courses</h2>
+                <div class="courses-grid">
+                    <article class="course-card">
+                        <img src="assets/images/course-web-dev.jpg" alt="Full Stack Web Development">
+                        <div class="course-info">
+                            <h3>Full Stack Web Development</h3>
+                            <p class="instructor">by Sarah Johnson</p>
+                            <div class="course-meta">
+                                <span class="rating">★★★★★ 4.9 (3,205)</span>
+                                <span class="duration">12 weeks</span>
+                                <span class="level">Beginner</span>
+                            </div>
+                            <p class="course-description">Learn HTML, CSS, JavaScript, Node.js, and MongoDB from scratch</p>
+                            <p class="price">$299</p>
+                            <a href="#" class="btn btn-outline">Learn More</a>
+                        </div>
+                    </article>
+
+                    <article class="course-card">
+                        <img src="assets/images/course-data-science.jpg" alt="Data Science Fundamentals">
+                        <div class="course-info">
+                            <h3>Data Science Fundamentals</h3>
+                            <p class="instructor">by Michael Chen</p>
+                            <div class="course-meta">
+                                <span class="rating">★★★★★ 4.8 (2,891)</span>
+                                <span class="duration">10 weeks</span>
+                                <span class="level">Beginner</span>
+                            </div>
+                            <p class="course-description">Master Python, pandas, and statistical analysis for data science</p>
+                            <p class="price">$349</p>
+                            <a href="#" class="btn btn-outline">Learn More</a>
+                        </div>
+                    </article>
+
+                    <article class="course-card">
+                        <img src="assets/images/course-digital-marketing.jpg" alt="Digital Marketing Strategy">
+                        <div class="course-info">
+                            <h3>Digital Marketing Strategy</h3>
+                            <p class="instructor">by Emma Rodriguez</p>
+                            <div class="course-meta">
+                                <span class="rating">★★★★☆ 4.7 (1,543)</span>
+                                <span class="duration">8 weeks</span>
+                                <span class="level">Intermediate</span>
+                            </div>
+                            <p class="course-description">Build effective marketing campaigns across digital channels</p>
+                            <p class="price">$199</p>
+                            <a href="#" class="btn btn-outline">Learn More</a>
+                        </div>
+                    </article>
+
+                    <article class="course-card">
+                        <img src="assets/images/course-ux-design.jpg" alt="UX/UI Design Principles">
+                        <div class="course-info">
+                            <h3>UX/UI Design Principles</h3>
+                            <p class="instructor">by Alex Thompson</p>
+                            <div class="course-meta">
+                                <span class="rating">★★★★★ 4.9 (2,067)</span>
+                                <span class="duration">10 weeks</span>
+                                <span class="level">Beginner</span>
+                            </div>
+                            <p class="course-description">Design user-centered interfaces using Figma and design thinking</p>
+                            <p class="price">$249</p>
+                            <a href="#" class="btn btn-outline">Learn More</a>
+                        </div>
+                    </article>
+
+                    <article class="course-card">
+                        <img src="assets/images/course-project-management.jpg" alt="Agile Project Management">
+                        <div class="course-info">
+                            <h3>Agile Project Management</h3>
+                            <p class="instructor">by Maria Garcia</p>
+                            <div class="course-meta">
+                                <span class="rating">★★★★☆ 4.6 (987)</span>
+                                <span class="duration">6 weeks</span>
+                                <span class="level">Intermediate</span>
+                            </div>
+                            <p class="course-description">Master Scrum, Kanban, and agile methodologies for project success</p>
+                            <p class="price">$179</p>
+                            <a href="#" class="btn btn-outline">Learn More</a>
+                        </div>
+                    </article>
+
+                    <article class="course-card">
+                        <img src="assets/images/course-cybersecurity.jpg" alt="Cybersecurity Fundamentals">
+                        <div class="course-info">
+                            <h3>Cybersecurity Fundamentals</h3>
+                            <p class="instructor">by David Kim</p>
+                            <div class="course-meta">
+                                <span class="rating">★★★★★ 4.8 (1,234)</span>
+                                <span class="duration">12 weeks</span>
+                                <span class="level">Beginner</span>
+                            </div>
+                            <p class="course-description">Learn network security, ethical hacking, and risk management</p>
+                            <p class="price">$329</p>
+                            <a href="#" class="btn btn-outline">Learn More</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="load-more">
+                    <button class="btn btn-outline">Load More Courses</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="course-categories">
+            <div class="container">
+                <h2>Browse by Category</h2>
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <div class="category-icon">💻</div>
+                        <h3>Web Development</h3>
+                        <p>45 courses</p>
+                        <a href="#" class="category-link">Explore →</a>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">📊</div>
+                        <h3>Data Science</h3>
+                        <p>32 courses</p>
+                        <a href="#" class="category-link">Explore →</a>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">🎨</div>
+                        <h3>Design</h3>
+                        <p>28 courses</p>
+                        <a href="#" class="category-link">Explore →</a>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">📈</div>
+                        <h3>Marketing</h3>
+                        <p>24 courses</p>
+                        <a href="#" class="category-link">Explore →</a>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">💼</div>
+                        <h3>Business</h3>
+                        <p>35 courses</p>
+                        <a href="#" class="category-link">Explore →</a>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">🔒</div>
+                        <h3>Cybersecurity</h3>
+                        <p>18 courses</p>
+                        <a href="#" class="category-link">Explore →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SkillShare Academy</h3>
+                    <p>Empowering professionals through expert-led learning and mentorship.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Learn</h4>
+                    <ul>
+                        <li><a href="courses.html">Browse Courses</a></li>
+                        <li><a href="mentors.html">Find Mentors</a></li>
+                        <li><a href="#">Learning Paths</a></li>
+                        <li><a href="#">Certifications</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Community Forum</a></li>
+                        <li><a href="#">Student Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SkillShare Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
