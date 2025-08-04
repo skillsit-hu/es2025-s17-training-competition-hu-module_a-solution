@@ -313,6 +313,9 @@ main {
     box-shadow: var(--shadow);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .course-card:hover,
@@ -351,6 +354,14 @@ main {
 .course-info,
 .mentor-info {
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.mentor-button-wrapper {
+    margin-top: auto;
+    padding-top: 1.5rem;
 }
 
 .course-info h3,
