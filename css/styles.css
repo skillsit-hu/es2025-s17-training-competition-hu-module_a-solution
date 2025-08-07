@@ -466,7 +466,7 @@ main {
 .search-bar {
     display: flex;
     max-width: 500px;
-    margin: 0 auto 2rem;
+    margin: 2rem auto 2rem;
     background: white;
     border-radius: 25px;
     overflow: hidden;
@@ -685,7 +685,6 @@ main {
 }
 
 .platform-benefits {
-    background-color: var(--bg-light);
     padding: 4rem 0;
 }
 
@@ -718,6 +717,7 @@ main {
 }
 
 .company-stats {
+    background-color: var(--bg-light);
     padding: 4rem 0;
     text-align: center;
 }
