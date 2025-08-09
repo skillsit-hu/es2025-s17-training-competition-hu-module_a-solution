@@ -1245,3 +1245,9 @@ textarea:focus {
         border: 1px solid black;
     }
 }
+
+.logo-image {
+    max-height: 50px;
+    width: auto;
+    display: block;
+}
