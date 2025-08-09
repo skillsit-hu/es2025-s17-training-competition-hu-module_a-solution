@@ -351,6 +351,15 @@ main {
     font-size: 0.875rem;
     font-weight: 600;
     z-index: 10;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.mentor-badge img{
+    display: inline-block;
+    height: fit-content;
+    width: 1.2rem;
 }
 
 .course-info,
@@ -366,6 +375,11 @@ main {
     padding-top: 1.5rem;
 }
 
+.search-button img{
+    display: inline-block;
+    height: fit-content;
+    width: 1.5rem;
+}
 .course-info h3,
 .mentor-info h3 {
     color: var(--text-primary);
@@ -440,6 +454,8 @@ main {
     font-size: 0.875rem;
     color: var(--text-secondary);
 }
+
+
 
 .price,
 .mentor-pricing {
@@ -702,9 +718,14 @@ main {
     text-align: center;
 }
 
-.benefit-icon {
-    font-size: 3rem;
+.benefit-icon {  
+    font-size: 3rem;  
     margin-bottom: 1rem;
+}
+.benefit-icon img{
+    width: 50px;
+    display: block;
+    margin-inline: auto;
 }
 
 .benefit-card h3 {
@@ -791,6 +812,11 @@ main {
     font-size: 1.25rem;
     padding: 0.5rem;
 }
+.member-social img{
+    display: inline-block;
+    height: fit-content;
+    width: 1.5rem
+}
 
 .company-story {
     padding: 4rem 0;
@@ -822,6 +848,12 @@ main {
     color: var(--text-secondary);
     margin-bottom: 0.5rem;
     padding-left: 0;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.awards-list li img{
+    width: 1.5rem;    
 }
 
 .story-timeline {
@@ -873,8 +905,14 @@ main {
 
 .contact-item strong {
     color: var(--text-primary);
-    display: block;
-    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-item img{
+    width: 1.5rem;
+
 }
 
 .contact-item p {
@@ -974,13 +1012,18 @@ footer {
 }
 
 .social-links {
-    display: flex;
-    gap: 1rem;
+    display: flex;    
+    gap: 1rem;    
 }
 
-.social-links a {
-    font-size: 1.5rem;
+
+.social-links a {  
     transition: transform 0.3s ease;
+}
+
+.social-links a img{
+    display: inline-block;
+    height: 2rem;
 }
 
 .social-links a:hover {
@@ -1174,16 +1217,26 @@ textarea:focus {
 
 /* Credit System Styling - Vibrant Elements */
 .credits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
     background: linear-gradient(135deg, var(--accent-color), var(--success-color));
     color: white;
     font-weight: 700;
     font-size: 0.95rem;
     padding: 0.5rem 1rem;
     border-radius: 25px;
-    text-align: center;
+    
     box-shadow: 0 4px 8px rgba(6, 182, 212, 0.3);
     border: 2px solid rgba(255, 255, 255, 0.3);
-    margin-bottom: 0;
+    margin-bottom: 0;    
+}
+
+.credits img{
+    height: fit-content;
+    display: inline-block;
+    width: 1.2rem;
 }
 
 .credit-rate {
@@ -1192,10 +1245,21 @@ textarea:focus {
     font-weight: 600;
     font-size: 0.9rem;
     padding: 0.4rem 0.8rem;
-    border-radius: 20px;
-    display: inline-block;
+    border-radius: 20px;    
     box-shadow: 0 3px 6px rgba(124, 58, 237, 0.4);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);        
+}
+
+.credit-info strong, .credit-rate, .mentor-stats span{
+    display: inline-flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.credit-info strong img, .credit-rate img, .mentor-stats span img{
+    display: inline-block;
+    height: fit-content;
+    width: 1.1rem;
 }
 
 .mentor-availability {
